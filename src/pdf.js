@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer');
+import puppeteer from 'puppeteer';
 
 export async function getPdf(htmlContent) { 
     var browser = await puppeteer.launch();

@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer';
 
 export async function getPdf(htmlContent) { 
-    var browser = await puppeteer.launch();
+    var browser = await puppeteer.launch({ headless: 'new' });
 
     var page = await browser.newPage();
 

@@ -1,37 +1,16 @@
-# ⚡ Node.js Starter Function
+# ⚡ Online Resume Appwrite Function
 
-A simple starter function. Edit `src/main.js` to get started and create something awesome! 🚀
+An Appwrite function that returns an HTML page containing a resume
 
 ## 🧰 Usage
 
 ### GET /
 
-- Returns a "Hello, World!" message.
-
-**Response**
-
-Sample `200` Response:
-
-```text
-Hello, World!
-```
+- Returns an HTML page representing a resume
 
 ### POST, PUT, PATCH, DELETE /
 
-- Returns a "Learn More" JSON response.
-
-**Response**
-
-Sample `200` Response:
-
-```json
-{
-  "motto": "Build like a team of hundreds_",
-  "learn": "https://appwrite.io/docs",
-  "connect": "https://appwrite.io/discord",
-  "getInspired": "https://builtwith.appwrite.io"
-}
-```
+- No response
 
 ## ⚙️ Configuration
 

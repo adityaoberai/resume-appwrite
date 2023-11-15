@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer';
 
 export async function getPdf(htmlContent) { 
     var browser = await puppeteer.launch({ 
-        executablePath: '/usr/bin/chromium-browser',
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
         args: [
           '--no-sandbox',
           '--disable-dev-shm-usage',

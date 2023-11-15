@@ -1,7 +1,10 @@
 import puppeteer from 'puppeteer';
 
 export async function getPdf(htmlContent) { 
-    var browser = await puppeteer.launch({ headless: 'new' });
+    var browser = await puppeteer.launch({ 
+        headless: 'new',
+        executablePath: '/usr/bin/chromium-browser'
+    });
 
     var page = await browser.newPage();
 

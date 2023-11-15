@@ -2,15 +2,11 @@ import puppeteer from 'puppeteer';
 
 export async function getPdf(htmlContent) { 
     var browser = await puppeteer.launch({ 
-        headless: 'new',
         executablePath: '/usr/bin/chromium-browser',
         args: [
           '--no-sandbox',
-          '--headless',
-          '--disable-gpu',
           '--disable-dev-shm-usage',
-          '--disable-setuid-sandbox', 
-          '--no-zygote'
+          '--disable-setuid-sandbox'
         ]
     });
 

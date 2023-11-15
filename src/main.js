@@ -20,7 +20,7 @@ export default async ({ req, res, log }) => {
 
   if (req.method === 'GET' && req.path === '/download') {
     return res.send('<h1>Send POST Request to download PDF</h1>', 200, {
-      'Content-Type': 'application/pdf',
+      'Content-Type': 'text/html; charset=utf-8',
     });
   }
 };

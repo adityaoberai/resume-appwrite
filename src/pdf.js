@@ -14,7 +14,9 @@ export async function getPdf(htmlContent) {
 
     await page.setContent(htmlContent);
 
-    var resume = await page.pdf({ format: 'A4' });
+    var resume = await page.pdf({ 
+      format: 'A4'
+    });
 
     await browser.close();
 

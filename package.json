@@ -1,16 +1,11 @@
 {
-  "name": "starter-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/main.js",
+  "name": "resume-appwrite",
+  "module": "src/main.js",
   "type": "module",
-  "scripts": {
-    "format": "prettier --write ."
-  },
   "devDependencies": {
-    "prettier": "^3.0.0"
+    "@types/bun": "latest"
   },
-  "dependencies": {
-    "puppeteer": "^13.5.0"
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
